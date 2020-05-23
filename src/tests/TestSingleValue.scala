@@ -9,6 +9,7 @@ class TestSingleValue extends FunSuite {
   val EPSILON: Double = 0.05
 
   def equalDoubles(d1: Double, d2: Double): Boolean = {
+    println("delta", (d1 - d2).abs)
     (d1 - d2).abs < EPSILON
   }
 
